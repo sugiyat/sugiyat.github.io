@@ -1,0 +1,52 @@
+#content {
+    display: grid;
+    grid-template-areas:    "img title"
+                            "aside main";
+    grid-template-columns: 12em 1fr;
+    grid-template-rows: auto auto;
+}
+
+#content > #resumePhoto {
+    grid-area: img;
+    justify-self: center;
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#content > #resumePhoto > img {
+    object-fit: cover;
+    position: absolute;
+    width: 200%;
+    left: -45%;
+    top: -20%;
+}
+
+#content > #pageHeader {
+    grid-area: title;
+    align-self: center;
+}
+
+aside {
+    grid-area: aside;
+}
+
+aside > ul, main > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+main {
+    grid-area: main;
+    padding-left: 1.5rem;
+}
+
+hr {
+    height: 1px;
+    border-width: 0;
+    color: #d07c89;
+    background-color: #d07c89;
+}

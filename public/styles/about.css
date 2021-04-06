@@ -1,0 +1,25 @@
+
+#content {
+    display: grid;
+    grid-template-areas: "aside main";
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto 1fr;
+}
+
+aside {
+    position: relative;
+    grid-area: aside;
+}
+
+aside > img {
+    width: 100%;
+    object-fit: contain;
+}
+
+main {
+    grid-area: main;
+}
+
+main > * {
+    padding: 0 1.5em
+}

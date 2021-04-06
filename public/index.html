@@ -5,41 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Taisuke's Portfolio 2021</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body id="home">
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
+        <div id="titleLabel">Taisuke Sugiyama</div>
+        <div class="horizontal-list-container">
+            <ul id="navbarItems">
+                <li><h5><a href="index.html">Home</a></h5></li>
+                <li><h5><a href="about.html">About</a></h5></li>
+                <li><h5><a href="resume.html">Resume</a></h5></li>
+            </ul>
+        </div>
     </nav>
-    <main>
-        <h1>Taisuke Sugiyama</h1>
-        <ul id="PortfolioItems">
-            <li>
-                <h2><a href="#">ProjectName</a></h2>
-                <img src="images/portfolio/portfolioImage.jpg">
-                <p>Description</p>
-            </li>
-            <li>
-                <h2><a href="#">Apps</a></h2>
-                <img src="images/portfolio/app.jpg">
-                <p>Description</p>
-            </li>
-            <li>
-                <h2><a href="#">3D Modeling</a></h2>
-                <img src="images/portfolio/model.jpg">
-                <p>Description</p>
-            </li>
-            <li>
-                <h2><a href="#">Art</a></h2>
-                <img src="images/portfolio/art.jpg">
-                <p>Description</p>
-            </li>
-        </ul>
-    </main>
-    <footer></footer>
+    <div id="homeTitleContainer">
+        <img src="images/portfolio/HomePage.jpg" alt="Home Page Photo">
+        <div>
+            <h1>Home Page</h1>
+            <h4>Taisuke Sugiyama's Portfolio</h4>
+        </div>
+    </div>
+    <div id="content">
+        <main class="horizontal-list-container">
+            <ul id="portfolioItems">
+                <li>
+                    <div>
+                        <img src="images/portfolio/projects.png" alt="My Projects">
+                    </div>
+                    <h2><a href="#">Projects</a></h2>
+                    <p>A list of all past projects I have worked on</p>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/portfolio/model.png" alt="My 3D Models">
+                    </div>
+                    <h2><a href="#">3D Modeling</a></h2>
+                    <p>A list of 3D models I am proud of</p>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/portfolio/art.jpg" alt="My Art">
+                    </div>
+                    <h2><a href="#">Art</a></h2>
+                    <p>A list of artwork I want to show</p>
+                </li>
+            </ul>
+        </main>
+    </div>
     <script src="scripts/main.js"></script>
 </body>
 </html>
