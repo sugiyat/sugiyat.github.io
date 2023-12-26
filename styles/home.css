@@ -1,0 +1,31 @@
+
+#section-search * {
+  padding: 0;
+  color: #cdd6f4;
+  font-size: 1rem;
+}
+
+#section-search form {
+  display: flex;
+  height: 3rem;
+}
+
+#section-search input[type=text],
+#section-search button {
+  background: #181825;
+  border: 2px solid #1e1e2e;
+}
+
+#section-search input[type=text] {
+  border-right: none;
+  width: calc(100% - 3rem);
+  padding-left: 1rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#section-search button {
+  border-left: none;
+  padding-right: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
